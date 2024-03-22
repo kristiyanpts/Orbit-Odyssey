@@ -31,6 +31,7 @@ Orbit Odyssey is a company focused on interstellar vacations. It offers its user
 - Target Demographic: Schools, educational institutions, and space enthusiasts looking for an accessible way to experience space.
 - Pricing Strategy: Subscription-based access for institutions, with individual purchase options for home users.
 
-## 3. Application Strutcture - TBD
-## 4. Available Scripts / Setting up - TBD
-## 5. Screenshots - TBD
+## 3. Technologies - TBD
+## 4. Application Strutcture - TBD
+## 5. Available Scripts / Setting up - TBD
+## 6. Screenshots - TBD
