@@ -6,20 +6,31 @@ import Home from "./components/static/Home";
 import Login from "./components/user/Login";
 import Register from "./components/user/Register";
 import Store from "./components/main/Store";
+import Destinations from "./components/main/Destinations/Destinations";
+import SolarSystem from "./components/main/Destinations/SolarSystem";
+import MilkyWay from "./components/main/Destinations/MilkyWay";
+import ExoticPlanets from "./components/main/Destinations/ExoticPlanets";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
     <>
       <Header />
 
-      <section className="relative h-full w-full flex flex-col box-border">
+      <section className="relative h-fit w-full flex flex-col box-border">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/destinations" element={<Destinations />} />
+          <Route path="/solar-system" element={<SolarSystem />} />
+          <Route path="/milky-way" element={<MilkyWay />} />
+          <Route path="/exotic-planets" element={<ExoticPlanets />} />
         </Routes>
       </section>
+
+      <Footer />
     </>
   );
 }

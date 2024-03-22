@@ -589,6 +589,26 @@ module.exports = {
           animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
         },
       },
+      show: {
+        "0%": {
+          display: "block",
+          opacity: 0,
+        },
+        "100%": {
+          display: "block",
+          opacity: 100,
+        },
+      },
+      hide: {
+        "0%": {
+          display: "block",
+          opacity: 100,
+        },
+        "100%": {
+          display: "none",
+          opacity: 0,
+        },
+      },
     },
     letterSpacing: {
       tighter: "-0.05em",

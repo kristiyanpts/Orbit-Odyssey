@@ -1,11 +1,18 @@
 "use client";
-
 import hero from "../../assets/hero-background.png";
+import Carousel1 from "../../assets/carousel-1.png";
+import Carousel2 from "../../assets/carousel-2.png";
+import Carousel3 from "../../assets/carousel-3.png";
+import Carousel4 from "../../assets/carousel-4.png";
+import Carousel5 from "../../assets/carousel-5.png";
+import Carousel6 from "../../assets/carousel-6.png";
+import Carousel7 from "../../assets/carousel-7.png";
+import Carousel8 from "../../assets/carousel-8.png";
 import { Carousel } from "flowbite-react";
 
 const Home = () => {
   return (
-    <div className="relative h-full">
+    <div className="relative w-full h-fit">
       <div className="flex flex-col items-start justify-center pl-20 text-white z-0 relative w-full box-border h-[calc(100vh-5rem)]">
         <h1 className="text-5xl font-bold uppercase mb-4">
           Discover the unknown
@@ -48,7 +55,7 @@ const Home = () => {
           <div className="group relative">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
               <img
-                src={hero}
+                src={Carousel2}
                 alt="Front of men&#039;s Basic Tee in black."
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
@@ -73,7 +80,7 @@ const Home = () => {
           <div className="group relative">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
               <img
-                src={hero}
+                src={Carousel3}
                 alt="Front of men&#039;s Basic Tee in black."
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
@@ -98,7 +105,7 @@ const Home = () => {
           <div className="group relative">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
               <img
-                src={hero}
+                src={Carousel4}
                 alt="Front of men&#039;s Basic Tee in black."
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
@@ -123,7 +130,7 @@ const Home = () => {
           <div className="group relative">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
               <img
-                src={hero}
+                src={Carousel5}
                 alt="Front of men&#039;s Basic Tee in black."
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
@@ -169,11 +176,14 @@ const Home = () => {
         <div className="w-2/3 relative">
           <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
             <Carousel>
-              <img src={hero} alt="..." />
-              <img src={hero} alt="..." />
-              <img src={hero} alt="..." />
-              <img src={hero} alt="..." />
-              <img src={hero} alt="..." />
+              <img src={Carousel1} alt="..." />
+              <img src={Carousel2} alt="..." />
+              <img src={Carousel3} alt="..." />
+              <img src={Carousel4} alt="..." />
+              <img src={Carousel5} alt="..." />
+              <img src={Carousel6} alt="..." />
+              <img src={Carousel7} alt="..." />
+              <img src={Carousel8} alt="..." />
             </Carousel>
           </div>
         </div>

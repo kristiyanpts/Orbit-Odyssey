@@ -40,3 +40,27 @@ Pricing Strategy: Subscription-based access for institutions, with individual pu
 - A bit of text about the expirince with the company(catchy)
 - Reviews
 - A normal footer of modern site
+
+---Destination Page---
+
+- Navigation bar
+- Main Categories Section:
+  / Bootstrap cards to represent each main category of space vacations(ISS Hotel,Solar System,Milky Way,Exotic Planets)
+  / background image that corresponds with the theme (an image of the ISS for the "ISS Hotel" category)
+- Subcategories Section
+  / When a visitor clicks on one of the main category cards, they are taken to a new page or a section within the page that contains smaller cards, each representing a specific destination within that category.
+  // For instance, under "ISS Hotel," you might find:
+  Luxury Orbital Suite: For those seeking a premium experience with Earth views.
+  Zero-G Adventure Module: Focused on activities in microgravity.
+  Each subcategory card should provide a brief overview of the destination, including duration of stay, main attractions, and the starting price. You could also use icons to indicate the type of travel (e.g., a rocket for interplanetary, a spaceship for interstellar).
+
+---Book Page---
+
+- Navigation Bar
+- Title of the place you stay
+- Images of the place
+- Book button
+- Descriptions of the place
+- Review form
+- Bootstrap card for other offers
+- Footer

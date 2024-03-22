@@ -1,44 +1,60 @@
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const { pathname } = useLocation();
+  if (pathname.includes("login") || pathname.includes("register")) return;
+
   return (
     <div className="relative h-24 w-full bg-header text-textSecondary flex justify-between items-center px-8 box-border">
-      <Link to="/">
+      <NavLink to="/">
         <img src={logo} alt="" className="h-20" />
-      </Link>
+      </NavLink>
       <nav className="flex gap-4 text-lg items-center">
         <div className="table-cell relative p-15">
-          <a
-            href=""
-            className="transition-all hover:text-hoverPrimary hover-underline"
+          <NavLink
+            to="/destinations"
+            className={({ isActive }) =>
+              isActive
+                ? "transition-all active-link text-hoverPrimary"
+                : "transition-all hover:text-hoverPrimary hover-underline"
+            }
           >
-            top offers
-          </a>
+            destinations
+          </NavLink>
         </div>
         <div className="table-cell relative p-15">
-          <Link
+          <NavLink
             to="/store"
-            className="transition-all hover:text-hoverPrimary hover-underline"
+            className={({ isActive }) =>
+              isActive
+                ? "transition-all active-link text-hoverPrimary"
+                : "transition-all hover:text-hoverPrimary hover-underline"
+            }
           >
             store
-          </Link>
+          </NavLink>
         </div>
         <div className="table-cell relative p-15">
-          <Link
+          <NavLink
             to="/login"
-            className="transition-all hover:text-hoverPrimary hover-underline"
+            className={({ isActive }) =>
+              isActive
+                ? "transition-all active-link text-hoverPrimary"
+                : "transition-all hover:text-hoverPrimary hover-underline"
+            }
           >
             login
-          </Link>
+          </NavLink>
         </div>
         <div className="table-cell relative p-15">
-          <Link
+          <NavLink
             to="/register"
             className="transition-all hover:text-hoverPrimary hover-underline"
           >
             register
-          </Link>
+          </NavLink>
         </div>
 
         <div className="w-30 h-12">
