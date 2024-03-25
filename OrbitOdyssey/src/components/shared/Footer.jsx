@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -7,7 +8,7 @@ const Footer = () => {
   if (pathname.includes("login") || pathname.includes("register")) return;
 
   return (
-    <div className="relative bg-header p-10 flex flex-col text-white gap-5">
+    <div className="relative bg-header p-10 flex flex-col text-white gap-5 mt-auto w-full">
       <div className="flex justify-between">
         <img src={logo} alt="" className="w-28 h-28" />
         <div className="flex flex-col gap-1">
@@ -15,9 +16,9 @@ const Footer = () => {
           <a href="" className="hover:underline">
             Contact Us
           </a>
-          <a href="" className="hover:underline">
+          <NavLink to="/about" className="hover:underline">
             About
-          </a>
+          </NavLink>
           <a href="" className="hover:underline">
             TOS
           </a>

@@ -17,8 +17,8 @@ const Header = () => {
             to="/destinations"
             className={({ isActive }) =>
               isActive
-                ? "transition-all active-link text-hoverPrimary"
-                : "transition-all hover:text-hoverPrimary hover-underline"
+                ? "transition-all active-link text-textPrimary"
+                : "transition-all hover:text-textPrimary hover-underline"
             }
           >
             destinations
@@ -29,8 +29,8 @@ const Header = () => {
             to="/store"
             className={({ isActive }) =>
               isActive
-                ? "transition-all active-link text-hoverPrimary"
-                : "transition-all hover:text-hoverPrimary hover-underline"
+                ? "transition-all active-link text-textPrimary"
+                : "transition-all hover:text-textPrimary hover-underline"
             }
           >
             store
@@ -41,8 +41,8 @@ const Header = () => {
             to="/login"
             className={({ isActive }) =>
               isActive
-                ? "transition-all active-link text-hoverPrimary"
-                : "transition-all hover:text-hoverPrimary hover-underline"
+                ? "transition-all active-link text-textPrimary"
+                : "transition-all hover:text-textPrimary hover-underline"
             }
           >
             login
@@ -51,7 +51,7 @@ const Header = () => {
         <div className="table-cell relative p-15">
           <NavLink
             to="/register"
-            className="transition-all hover:text-hoverPrimary hover-underline"
+            className="transition-all hover:text-textPrimary hover-underline"
           >
             register
           </NavLink>

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-black.png";
 
 const Login = () => {
   return (
-    <div className="relative h-full w-full bg-transparent flex items-center justify-center my-12">
-      <div className="relative bg-white rounded-lg flex transition-all shadow-lg w-fit h-full items-center">
+    <div className="absolute h-screen w-screen bg-transparent flex items-center justify-center">
+      <div className="relative bg-white rounded-lg flex transition-all shadow-lg w-fit h-fit items-center">
         <div className="relative p-7 w-96 h-full flex flex-col gap-2 items-center">
           <Link to="/">
-            <img src={logo} alt="" className="w-40" />
+            <img src={logo} alt="" className="w-60" />
           </Link>
           <div className="text-3xl font-bold">Orbit Odyssey</div>
           <div>
@@ -24,7 +24,6 @@ const Login = () => {
             </Link>
           </div>
         </div>
-        <hr className="relative w-1 h-full bg-black" />
         <form className="relative p-7 w-96 h-auto flex flex-col gap-2">
           <h1 className="text-3xl">Login</h1>
           <span>
@@ -37,13 +36,13 @@ const Login = () => {
               type="email"
               name="floating_email"
               id="floating_email"
-              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="floating_email"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email address
             </label>
@@ -53,13 +52,13 @@ const Login = () => {
               type="password"
               name="floating_password"
               id="floating_password"
-              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary peer"
               placeholder=" "
               required
             />
             <label
               htmlFor="floating_password"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Password
             </label>
@@ -71,7 +70,7 @@ const Login = () => {
                 aria-describedby="helper-checkbox-text"
                 type="checkbox"
                 value=""
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
             </div>
             <div className="ms-2 text-sm">
@@ -92,7 +91,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="text-white bg-primary hover:bg-hoverPrimary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-60 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-primary hover:bg-hoverPrimary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-60 px-5 py-2.5 text-center dark:bg-primary dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Login
           </button>
