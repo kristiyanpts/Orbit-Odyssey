@@ -173,6 +173,8 @@ module.exports = {
       primary: "#1f222e",
       textPrimary: "#F7DFD7",
       textSecondary: "#e7eaeb",
+      buttonBase: "#ffa500",
+      buttonHover: "#cc8400",
     }),
     columns: {
       auto: "auto",

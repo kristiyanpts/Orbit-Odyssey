@@ -1,9 +1,9 @@
-const authController = require('./auth');
-const themeController = require('./themeController');
-const postController = require('./postController');
+const authController = require("./auth");
+const tripsController = require("./tripController");
+const productsController = require("./productController");
 
 module.exports = {
-    authController,
-    themeController,
-    postController,
-}
+  authController,
+  tripsController,
+  productsController,
+};

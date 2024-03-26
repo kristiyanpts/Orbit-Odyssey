@@ -5,23 +5,30 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   const { pathname } = useLocation();
 
-  if (pathname.includes("login") || pathname.includes("register")) return;
+  if (
+    pathname.includes("login") ||
+    pathname.includes("register") ||
+    pathname.includes("admin")
+  )
+    return;
 
   return (
     <div className="relative bg-header p-10 flex flex-col text-white gap-5 mt-auto w-full">
       <div className="flex justify-between">
-        <img src={logo} alt="" className="w-28 h-28" />
+        <NavLink to="/">
+          <img src={logo} alt="Company Logo" className="h-28 w-28" />
+        </NavLink>
         <div className="flex flex-col gap-1">
           <span className="text-lg font-bold">Orbit Odyssey</span>
-          <a href="" className="hover:underline">
-            Contact Us
-          </a>
+          <NavLink to="/contact" className="hover:underline">
+            ContactUs
+          </NavLink>
           <NavLink to="/about" className="hover:underline">
             About
           </NavLink>
-          <a href="" className="hover:underline">
+          <NavLink to="/tos" className="hover:underline">
             TOS
-          </a>
+          </NavLink>
           <a href="" className="hover:underline">
             FAQs
           </a>

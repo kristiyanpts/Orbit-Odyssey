@@ -15,6 +15,10 @@
   overflow-x: hidden;
   background-color: #f7f5f2;
 }
+#navbar a {
+  font-variant: small-caps;
+  font-size: 1.4rem;
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 #root::-webkit-scrollbar {
@@ -65,4 +69,7 @@ li {
 .active-link:after {
   width: 100%;
   left: 0;
+}
+.min-w-80vw {
+  min-width: 100vw;
 }

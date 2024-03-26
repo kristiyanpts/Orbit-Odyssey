@@ -13,32 +13,36 @@ import { Carousel } from "flowbite-react";
 const Home = () => {
   return (
     <div className="relative w-full h-fit">
-      <div className="flex flex-col items-start justify-center pl-20 text-white z-0 relative w-full box-border h-[calc(100vh-5rem)]">
-        <h1 className="text-5xl font-bold uppercase mb-4">
+      <div className="flex flex-col items-center justify-center sm:items-start sm:pl-20 text-white z-0 relative w-full box-border h-[calc(100vh-5rem)]">
+        <h1 className="text-5xl font-bold uppercase mb-4 text-center sm:text-left">
           Discover the unknown
         </h1>
-        <p className="max-w-md mb-8">Beyond Boundaries, Beyond Imagination</p>
-        <p className="max-w-md mb-8">
+        <p className="max-w-md mb-8 text-center sm:text-left">
+          Beyond Boundaries, Beyond Imagination
+        </p>
+        <p className="max-w-md mb-8 text-center sm:text-left">
           Innovation | Inspiration | Accessibility | Safety | Environmental
           Responsibility
         </p>
-        <p className="max-w-md mb-8">
+        <p className="max-w-md mb-8 text-center sm:text-left">
           Join the Pioneers Redefining Travel — Where Every Star Is Just the
           Beginning
         </p>
 
-        <button
-          className="rounded-2xl text-white hover:scale-105 font-bold uppercase border border-solid hover:shadow-gray-300 hover:shadow-md border-white-600 text-sm px-6 py-3 shadow  outline-none focus:outline-none mr-4 ease-linear transition-all duration-150 mb-5 box-border"
-          type="button"
-        >
-          Learn more
-        </button>
-        <button
-          className="rounded-2xl text-white-600 hover:scale-105 bg-transparent border border-solid border-white-600 hover:shadow-md hover:shadow-gray-300 hover:text-white font-bold uppercase text-sm px-6 py-3 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 box-border"
-          type="button"
-        >
-          Get started
-        </button>
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center gap-4">
+          <button
+            className="rounded-2xl text-white hover:scale-105 font-bold uppercase border border-solid hover:shadow-gray-300 hover:shadow-md border-white-600 text-sm px-6 py-3 shadow outline-none focus:outline-none ease-linear transition-all duration-150"
+            type="button"
+          >
+            Learn more
+          </button>
+          <button
+            className="rounded-2xl text-white-600 hover:scale-105 bg-transparent border border-solid border-white-600 hover:shadow-md hover:shadow-gray-300 hover:text-white font-bold uppercase text-sm px-6 py-3 outline-none focus:outline-none ease-linear transition-all duration-150"
+            type="button"
+          >
+            Get started
+          </button>
+        </div>
         <img
           src={hero}
           alt="Background"
@@ -154,9 +158,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-between items-center text-white p-8 h-screen bg-[#1B1A1D]">
-        <div className="w-1/3 space-y-6">
-          <h1 className="text-6xl font-bold">YOUR COMMUNITY AWAITS</h1>
+      <div className="flex flex-col lg:flex-row justify-between items-center text-white p-8 h-fit gap-10 bg-[#1B1A1D]">
+        <div className="w-full lg:w-1/3 space-y-6" id="your-community">
+          <h1 className="text-5xl font-bold sm:tesxt-6xl">
+            YOUR COMMUNITY AWAITS
+          </h1>
           <p className="text-lg">
             Star Citizen is currently in the ‘Alpha’ stage of development, being
             created in partnership with a passionate, knowledgeable, and
@@ -173,17 +179,17 @@ const Home = () => {
             evolution!
           </p>
         </div>
-        <div className="w-2/3 relative">
-          <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="flex justify-center items-center w-full overflow-hidden lg:w-2/3 aspect-video">
+          <div className="h-full xl:h-[500px] max-w-full aspect-video">
             <Carousel>
-              <img src={Carousel1} alt="..." />
-              <img src={Carousel2} alt="..." />
-              <img src={Carousel3} alt="..." />
-              <img src={Carousel4} alt="..." />
-              <img src={Carousel5} alt="..." />
-              <img src={Carousel6} alt="..." />
-              <img src={Carousel7} alt="..." />
-              <img src={Carousel8} alt="..." />
+              <img className="w-full object-cover" src={Carousel1} alt="..." />
+              <img className="w-full object-cover" src={Carousel2} alt="..." />
+              <img className="w-full object-cover" src={Carousel3} alt="..." />
+              <img className="w-full object-cover" src={Carousel4} alt="..." />
+              <img className="w-full object-cover" src={Carousel5} alt="..." />
+              <img className="w-full object-cover" src={Carousel6} alt="..." />
+              <img className="w-full object-cover" src={Carousel7} alt="..." />
+              <img className="w-full object-cover" src={Carousel8} alt="..." />
             </Carousel>
           </div>
         </div>
