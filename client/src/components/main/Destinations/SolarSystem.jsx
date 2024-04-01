@@ -18,7 +18,7 @@ const SolarSystem = () => {
               />
             </div>
             <div className="mt-4">
-              <h1 className="text-center text-3xl font-semibold">Earth</h1>
+              <h1 className="text-center text-3xl font-semibold">The Moon</h1>
             </div>
           </div>
 

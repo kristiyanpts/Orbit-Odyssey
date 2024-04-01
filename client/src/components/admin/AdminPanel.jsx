@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import AuthContext from "../../core/contexts/authContext";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
+import logo from "../../assets/logo.png";
 
 const AdminPanel = () => {
   const { isAuthenticated, isAdmin, firstName, lastName } =
@@ -80,26 +82,32 @@ const AdminPanel = () => {
         </div>
       </div>
       <div className="relative w-full h-full  flex flex-col">
-        <div className="relative w-full h-[60px] bg-header">
-          <button
-            className="relative w-[60px] h-full text-white flex items-center justify-center bg-orange-800"
-            onClick={() => setIsMenuShown(!isMenuShown)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+        <div className="relative w-full h-[60px] bg-header flex justify-between">
+          <div className="relative flex">
+            <button
+              className="relative w-[60px] h-full text-white flex items-center justify-center transition-all bg-orange-500 hover:bg-orange-800"
+              onClick={() => setIsMenuShown(!isMenuShown)}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+            <Link to="/" className="relative flex items-center text-white">
+              <img src={logo} alt="" className="relative h-full" />
+            </Link>
+          </div>
+          <div className="relative flex"></div>
         </div>
       </div>
     </div>
