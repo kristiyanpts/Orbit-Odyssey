@@ -1,8 +1,10 @@
 import { useContext, useState } from "react";
 import AuthContext from "../../core/contexts/authContext";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Route, Routes } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
+import AdminDashboard from "./AdminDashboard";
+import AdminTrips from "./AdminTrips";
 
 const AdminPanel = () => {
   const { isAuthenticated, isAdmin, firstName, lastName } =
@@ -107,7 +109,15 @@ const AdminPanel = () => {
               <img src={logo} alt="" className="relative h-full" />
             </Link>
           </div>
-          <div className="relative flex"></div>
+          <div className="relative flex">{/* TODO: Profile thingy */}</div>
+        </div>
+        <div className="relative w-full h-full overflow-auto">
+          <Routes>
+            <Route path="/dashboard" element={<AdminDashboard />} />
+            <Route path="/trips" element={<AdminTrips />} />
+            {/* <Route path="/listings" element={<AdminListings />} /> */}
+            {/* <Route path="/users" element={<AdminUsers />} /> */}
+          </Routes>
         </div>
       </div>
     </div>

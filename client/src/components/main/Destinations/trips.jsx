@@ -17,29 +17,38 @@ const Trips = () => {
       >
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-12 text-white"></div>
       </div>
-      <div className="flex justify-around p-10">
-        <div className="container p-8 flex flex-col justify-center items-center bg-beige-100 w-1/3">
+      <div className="flex justify-around p-10 pl-52">
+        <div className="container p-8 flex flex-col justify-center items-center bg-beige-100 w-1/12">
           {/* Change bg-beige-100 to actual background color */}
-          <div className="flex flex-col items-center space-x-4 mb-4 lg:mb-0">
+          <div className="flex flex-col items-center space-x-4 mb-4 lg:mb-0 border-2 border-header rounded-3xl p-4 pt-22 py-14">
             {/* <div className="text-lg font-light">Howdot. 32</div> */}
-            <div className="text-7xl font-bold">THE MOON</div>
+            <div className="text-5xl font-bold text-center">
+              THE MOON
+              <p className="text-center font-light text-2xl">(Our only moon)</p>
+              <p className="text-center font-medium">
+                15{" "}
+                <i className="fa-brands fa-bitcoin -rotate-12 relative top-2"></i>
+              </p>
+            </div>
             <button className="bg-orange-500 text-white font-bold py-2 px-8 rounded-full w-80 h-20 m-10 text-xl">
               BOOK NOW
             </button>
           </div>
         </div>
 
-        <div className="w-1/2 aspect-video ">
-          <Carousel>
-            <img className="w-full object-cover" src={Carousel1} alt="..." />
-            <img className="w-full object-cover" src={Carousel2} alt="..." />
-            <img className="w-full object-cover" src={Carousel3} alt="..." />
-            <img className="w-full object-cover" src={Carousel4} alt="..." />
-            <img className="w-full object-cover" src={Carousel5} alt="..." />
-            <img className="w-full object-cover" src={Carousel6} alt="..." />
-            <img className="w-full object-cover" src={Carousel7} alt="..." />
-            <img className="w-full object-cover" src={Carousel8} alt="..." />
-          </Carousel>
+        <div className="flex justify-center items-center overflow-hidden w-3/5 aspect-video">
+          <div className="w-full aspect-video">
+            <Carousel>
+              <img className="w-full object-cover" src={Carousel1} alt="..." />
+              <img className="w-full object-cover" src={Carousel2} alt="..." />
+              <img className="w-full object-cover" src={Carousel3} alt="..." />
+              <img className="w-full object-cover" src={Carousel4} alt="..." />
+              <img className="w-full object-cover" src={Carousel5} alt="..." />
+              <img className="w-full object-cover" src={Carousel6} alt="..." />
+              <img className="w-full object-cover" src={Carousel7} alt="..." />
+              <img className="w-full object-cover" src={Carousel8} alt="..." />
+            </Carousel>
+          </div>
         </div>
       </div>
 

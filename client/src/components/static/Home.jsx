@@ -9,6 +9,7 @@ import Carousel6 from "../../assets/carousel-6.png";
 import Carousel7 from "../../assets/carousel-7.png";
 import Carousel8 from "../../assets/carousel-8.png";
 import { Carousel } from "flowbite-react";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,13 +35,18 @@ const Home = () => {
             className="rounded-2xl text-white hover:scale-105 font-bold uppercase border border-solid hover:shadow-gray-300 hover:shadow-md border-white-600 text-sm px-6 py-3 shadow outline-none focus:outline-none ease-linear transition-all duration-150"
             type="button"
           >
-            Learn more
+            <NavLink to="/about" className="hover:underline">
+              Learn more
+            </NavLink>
           </button>
+
           <button
             className="rounded-2xl text-white-600 hover:scale-105 bg-transparent border border-solid border-white-600 hover:shadow-md hover:shadow-gray-300 hover:text-white font-bold uppercase text-sm px-6 py-3 outline-none focus:outline-none ease-linear transition-all duration-150"
             type="button"
           >
-            Get started
+            <NavLink to="/destinations" className="hover:underline">
+              Get started
+            </NavLink>
           </button>
         </div>
         <img
@@ -160,23 +166,25 @@ const Home = () => {
 
       <div className="flex flex-col lg:flex-row justify-between items-center text-white p-8 h-fit gap-10 bg-[#1B1A1D]">
         <div className="w-full lg:w-1/3 space-y-6" id="your-community">
-          <h1 className="text-5xl font-bold sm:tesxt-6xl">
+          <h1 className="text-5xl font-bold sm:text-6xl text-center">
             YOUR COMMUNITY AWAITS
           </h1>
-          <p className="text-lg">
-            Star Citizen is currently in the ‘Alpha’ stage of development, being
-            created in partnership with a passionate, knowledgeable, and
-            always-welcoming community.
+          <p className="text-lg text-center">
+            Orbit Odyssey is in a continuous journey of growth and discovery,
+            fueled by a dedicated community of space enthusiasts, engineers, and
+            dreamers. We are at the forefront of interstellar travel, crafting
+            experiences that allow humans to explore the cosmos in safety and
+            comfort.
           </p>
-          <p className="text-lg">
-            Each update to the game adds new features, technology, and gameplay
-            that grow and evolve together with our key development partners –
-            the players.
+          <p className="text-lg text-center">
+            Our mission is to make the wonders of the universe accessible to
+            all, transcending the final frontier to offer experiences that were
+            once thought to be impossible.
           </p>
-          <p className="text-lg">
-            From learning the ropes to tackling new threats together, help is
-            always at hand. Explore the ‘verse now and play your part in its
-            evolution!
+          <p className="text-lg text-center">
+            Safety is woven into the fabric of our adventures. We employ the
+            most advanced technologies and rigorous training programs to ensure
+            that every journey with us is not only exhilarating but also secure.
           </p>
         </div>
         <div className="flex justify-center items-center w-full overflow-hidden lg:w-2/3 aspect-video">

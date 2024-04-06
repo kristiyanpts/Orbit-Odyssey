@@ -26,6 +26,7 @@ const ContactUs = () => {
             <h3 className="text-lg font-semibold text-white">ADDRESS</h3>
             <p className="text-sm text-gray-300">
               {/* Add your address lines here */}
+              Tsentar, ул. Цар Борис III 24, Petrich, Bulgaria
             </p>
           </div>
 
@@ -36,6 +37,7 @@ const ContactUs = () => {
             <h3 className="text-lg font-semibold text-white">PHONE</h3>
             <p className="text-sm text-gray-300">
               {/* Add your phone numbers here */}
+              +359123456789
             </p>
           </div>
 
@@ -46,6 +48,7 @@ const ContactUs = () => {
             <h3 className="text-lg font-semibold text-white">EMAIL</h3>
             <p className="text-sm text-gray-300">
               {/* Add your email addresses here */}
+              orbitodyssey24@gmail.com
             </p>
           </div>
         </div>
